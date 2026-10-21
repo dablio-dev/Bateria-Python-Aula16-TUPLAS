@@ -1,7 +1,7 @@
 palavras_tuplas = ('tupla', 'imutavel', 'indice', 'fatiamento', 'sequencia')
 for palavras in palavras_tuplas:
     print(f'\nNa palavra: {palavras.upper()} temos as vogais: ', end='')
-    palavra_vogal = None
+    palavra_vogal = False
     ant_repeat = ''
     for vogais in palavras:
         if vogais in 'aeiou':
@@ -11,5 +11,5 @@ for palavras in palavras_tuplas:
                 ant_repeat += str(vogais)
                 print(f'{vogais.upper()} ', end='')
                 palavra_vogal = True
-    if palavra_vogal == None:
+    if palavra_vogal == False:
         print('Esta palavra não possui vogal.', end='')
